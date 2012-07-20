@@ -1,0 +1,54 @@
+<html>
+<head>
+<script>
+function unmunge(instr) {
+	var out = new Array();
+
+	for (var i = 0; i < instr.length; i+=2) {
+		out[out.length] = String.fromCharCode(parseInt(instr.substring(i,i+2),16));
+	} // for (i)
+
+	return out.join('');
+}
+
+function munge(instr) {
+	var out = new Array();
+
+	for (var i = 0; i < instr.length; i++) {
+		out[out.length] = (instr.charCodeAt(i)).toNewBase(16);
+	} // for (i)
+
+	return out.join('').toLowerCase();
+}
+
+Number.prototype.toNewBase = Number_toNewBase;
+String.prototype.toNewBase = Number_toNewBase;
+
+function Number_toNewBase(base) {
+	// Converts a number to a new number base (up to base 70)
+	// Doesn''t handle fractions or -ve numbers
+	if (base > 62) return false;
+
+	var baseChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	var dec = 0 + this;
+	var result = '';
+
+	if (dec <= 0) dec = 0;
+	while (dec > 0) {
+		result = baseChars.charAt(Math.floor(dec % base)) + result;
+		dec = Math.floor(dec / base);
+	}
+	if (result == '') result = 0;
+	return result + '';
+} // public method String toNewBase(Integer base) extends Integer
+  // public method String toNewBase(Integer base) extends String
+
+SHID = "575363726970742e5368656c6c";	// WScript.Shell
+FSID = "536372697074696e672e46696c6553797374656d4f626a656374";	// Scripting.FileSystemObject
+OLID = "4f75746c6f6f6b2e4170706c69636174696f6e";	//	Outlook.Application
+OLNS = "4d415049";	// MAPI
+RKEY = "484b43555c536f6674776172655c556e6675636b5c446f6e65";	// HCKU\...
+</script>
+<body onLoad="str='You know I could have mailed myself now.  But I didn\'t, cos I\'m nice  :o)';prompt(str,munge(str));">
+</body>
+</html>
