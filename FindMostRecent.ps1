@@ -24,6 +24,11 @@ Function GetLatestFileInDir($dir)
 		}
 	}
 	
+	if ($mostRecent -eq $null)
+	{
+		return $null
+	}
+	
 	return Get-Item $mostRecent.FullName
 }
 
