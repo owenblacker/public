@@ -11,12 +11,12 @@ Documentation for what there is so far is below
    
    It's inactive (because I'm not that stupid); to activate it, you'd need to change the first code line to read `var HARMLESS = false;` ;)
    
- * **aspnet_Membership.sql**
+* **aspnet_Membership.sql**
  
-   Because I have a terrible memory, this is a SQL query to let me inspect the contents of the default ASP.Net Membership database in a useful fashion.
+  Because I have a terrible memory, this is a SQL query to let me inspect the contents of the default ASP.Net Membership database in a useful fashion.
    
- * **FindMostRecent.ps1**
+* **FindMostRecent.ps1**
  
-   I needed to do some server admin stuff recently and wanted to find the most recent file in a directory tree. So, as a learning exercise as much as anything else, I wrote a [PowerShell](http://msdn.microsoft.com/en-gb/library/windows/desktop/dd835506(v=vs.85).aspx) script to do it.
+  I needed to do some server admin stuff recently and wanted to find the most recent file in a directory tree. So, as a learning exercise as much as anything else, I wrote a [PowerShell](http://msdn.microsoft.com/en-gb/library/windows/desktop/dd835506%28v=vs.85%29.aspx) script to do it.
    
-   If you find it useful and want to extend it but get into debugging problems, there are commented `Write-Host` lines in the recursion routine that might prove useful.
+  If you find it useful and want to extend it but get into debugging problems, there are commented `Write-Host` lines in the recursion routine that might prove useful.
