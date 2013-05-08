@@ -6,10 +6,10 @@ Function GetLatestFileInDir($dir)
 	{
 		if (Test-Path $file.FullName -PathType Container)
 		{
-            if ((Split-Path $file.FullName -leaf) -eq "App_Data")
-            {
-                continue
-            }
+			if ((Split-Path $file.FullName -leaf) -eq "App_Data")
+			{
+				continue
+			}
         
 			# Write-Host "Recursing into $($file.FullName)"
 			$recursed = GetLatestFileInDir(Get-Item $file.FullName)
