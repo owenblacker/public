@@ -1,0 +1,153 @@
+@media print {
+	.jumps {
+		display: none;
+	}
+
+	span.section {
+		font-weight: bolder;
+	}
+
+	span.tagline, span.smallprint {
+		font-style: italic;
+	}
+
+	pre {
+		font-size: x-small !important;
+	}
+}
+
+.jumps {
+	text-align: center;
+	font-size: x-small;
+}
+
+PRE {     
+	font-family: Lucida Console, Courier New, monospace;
+	font-size: 75%;
+	background: white;
+	color: black;
+	whitespace: pre;
+}
+
+div.archive, .topleft, .topform {
+	display: none;
+}
+
+td {
+	width: auto;
+	background: white !important;
+}
+
+/*
+.header, .smallprint {
+        display: block;
+        text-align: left;
+        position: relative;
+        left: 15%;
+        font-family: Lucida Console, Courier New, monospace;
+        font-size: smaller;
+}
+
+.quote {
+        display: block;
+        white-space: normal;
+        font-style: italic;
+        padding-left: 25%;
+        padding-right: 25%;
+        }
+
+.quote_attrib {
+        display: block;
+        font-size: smaller;
+        text-align: right;
+        padding-left: 17%;
+        padding-right: 17%;
+        padding-bottom: -2em;
+        }
+
+.section {
+        display: block;
+        white-space: normal; 
+        padding-top: 2em;
+        text-align: center;
+        font-variant: small-caps;
+        font-size: larger;
+        }
+
+.tagline {
+        display: block;
+        white-space: normal;
+        text-align: center;
+        font-variant: small-caps;
+        font-size: smaller;
+        }
+
+.item_space {
+        display: none;
+        }
+
+.item, .geekmedia, .antimeme {
+        display: block;
+        white-space: normal;
+        text-align: justify;
+        padding-top: 1em;
+        padding-left: 17%;
+        padding-right: 17%;
+        }
+
+.trailing_urls {
+        display: block;
+        white-space: pre;
+        text-align: right;
+        padding-right: 17%;
+        padding-left: 17%;
+        font-size: smaller;
+        }
+
+.geekmedia {
+        text-align: left;
+        white-space: normal;
+        }
+
+.antimeme {
+        white-space: pre;
+        display: block;
+        position: relative;
+        left: -2.1em;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+.smallprint {
+        padding-top: 2em;
+        margin-left: -3em;
+        left: 17%;
+}
+*/
+
+/*
+.top:before { content: " top {";}
+.top:after { content: " } top";}
+.header:before { content: " header {";}
+.header:after { content: " } header";} 
+.quote:before { content: " quote {";}
+.quote:after { content: " } quote";}
+.quote_attrib:before { content: " quote_attrib {";}
+.quote_attrib:after { content: " } quote_attrib";}
+.section:before { content: " section {";}
+.section:after { content: " } section";}
+.tagline:before { content: " tagline {";}
+.tagline:after { content: " } tagline";}
+.item:before { content: " item {";}
+.item:after { content: " } item";}
+.item_space:before { content: " item_space {";}
+.item_space:after { content: " } item_space";}
+.geekmedia:before { content: " geekmedia {";}
+.geekmedia:after { content: " } geekmedia";}
+.smallprint:before { content: " smallprint {";}
+.smallprint:after { content: " } smallprint";}
+.trailing_urls:before { content: " trailing_urls {";}
+.trailing_urls:after { content: " } trailing_urls";}
+.trailing_comment:before { content: " trailing_comment {";}
+.trailing_comment:after { content: " } trailing_comment";}
+*/
