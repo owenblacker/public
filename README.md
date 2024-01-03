@@ -1,5 +1,6 @@
-Owen Blacker's public repo
-========================================
+# Owen Blacker's public repo
+
+[![Ceasefire Now](https://badge.techforpalestine.org/default)](https://techforpalestine.org/learn-more)
 
 This is a repository of public utilities and stuff. There's not much in it yet because I haven't got round to tidying things up to be shareable.
 
@@ -9,7 +10,7 @@ Documentation for what there is so far is below
 
    This was a proof-of-concept I wrote in 2001, that reset a bunch of Registry keys that commonly led to email worms (at the time), then wrote a `.reg` file onto the desktop to allow a user to undo the change, then sprang a popup to tell the user what it had done.
    
-   It's inactive (because I'm not that stupid); to activate it, you'd need to change the first code line to read `var HARMLESS = false;` ;)
+   It's inactive (because I'm not that stupid); to activate it, you'd need to change the first code line to read `var HARMLESS = false;` 😉
    
 * **aspnet_Membership.sql**
  
