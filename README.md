@@ -18,6 +18,10 @@ Documentation for what there is so far is below
    
 * **FindMostRecent.ps1**
  
-  I needed to do some server admin stuff recently and wanted to find the most recent file in a directory tree. So, as a learning exercise as much as anything else, I wrote a [PowerShell](http://msdn.microsoft.com/en-gb/library/windows/desktop/dd835506%28v=vs.85%29.aspx) script to do it.
+  I needed to do some server admin stuff and wanted to find the most recent file in a directory tree. So, as a learning exercise as much as anything else, I wrote a [PowerShell](http://msdn.microsoft.com/en-gb/library/windows/desktop/dd835506%28v=vs.85%29.aspx) script to do it.
    
   If you find it useful and want to extend it but get into debugging problems, there are commented `Write-Host` lines in the recursion routine that might prove useful. It's also worth knowing that it will ignore any folder called `App_Data` and not recurse into it.
+
+* **ms2docx.sh**
+
+  I use [Obsidian](https://obsidian.md/) for my notes at work, but sometimes I need to import them into a shared [OneNote](https://www.onenote.com/) folder. As I can't install [OneMore](https://onemoreaddin.com/) without admin privs on Windows, I wrote a batch script, using [Pandoc](https://pandoc.org/) to convert Markdown to docx, so that I can do it repeatedly without remembering syntax.
